@@ -1,0 +1,32 @@
+{
+  "name": "janne_martin-aweddingcelebrant",
+  "description": "Janne Martin - Wedding Celebrant",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AimHigher-Web-Design/aweddingcelebrant.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AimHigher Web Design",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AimHigher-Web-Design/aweddingcelebrant/issues"
+  },
+  "homepage": "https://aweddingcelebrant",
+  "dependencies": {
+    "gatsby": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-offline": "next",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2"
+  }
+}
