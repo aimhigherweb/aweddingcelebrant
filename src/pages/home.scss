@@ -1,0 +1,18 @@
+.block {
+    clear: both;
+    overflow: hidden;
+    padding: 20px 0;
+
+    img {
+        float: left;
+        margin-right: 10px;
+    }
+
+    &.right {
+        img {
+            float: right;
+            margin-right: 0;
+            margin-left: 10px;
+        }
+    }
+}
