@@ -1,8 +1,118 @@
+@import '../variables.scss';
+
 header {
+    background: #fff;
     display: flex;
-    height: 15vh;
+        flex-wrap: wrap;
+    padding: 10px 10px 65px;
+    position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
 
     img, svg {
         max-height: 100%;
+    }
+
+    .logo {
+        height: $header_sml;
+        padding: 5px;
+        width: 100%;
+
+        &:active, &:hover, &:focus {
+            background: $primary_light_25;
+        }
+    } 
+
+    @keyframes scrolling {
+        0% {
+            opacity: 1;
+        }
+    
+        50% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+
+    nav {
+        border-top: 2px solid $primary;
+        border-bottom: 2px solid $primary;
+        display: flex;
+            align-items: center;
+        font: $font_headings;
+        overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+        padding: 5px 0;
+        position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        &:hover, &:focus {
+            &:after {
+                content: normal;
+            }
+        }
+
+        &:after {
+            animation: scrolling 2s linear infinite;
+            color: $primary;
+            content: '\00BB';
+            font-size: 2em;
+            position: absolute;
+                right: 10px;
+                bottom: 0;
+        }
+
+        a {
+            border-right: 2px solid $primary;
+            display: block;
+            padding: 5px 10px;
+            text-decoration: none;
+
+            &:active, &:hover, &:focus {
+                background: $primary_light_10;
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    header {
+        flex-wrap: nowrap;
+        font-size: 0.55em;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+        max-width: 1200px;
+
+        .logo {
+            padding: 0;
+            width: 20%;
+        }
+
+        nav {
+            border: none;
+            position: relative;
+
+            &:after {
+                content: normal;
+            }
+
+            a {
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
     }
 }

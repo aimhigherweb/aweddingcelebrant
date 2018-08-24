@@ -1,8 +1,76 @@
+@import '../variables.scss';
+
 footer {
     display: flex;
-    height: 15vh;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1200px;
 
     img, svg {
         max-height: 100%;
+    }
+
+    nav {
+        a {
+            padding: 5px 10px 10px;
+    
+            &:active, &:hover, &:focus {
+                background: $secondary;
+                text-decoration: none;
+            }
+        }
+
+        &.social {
+            a {
+                display: block;
+                padding: 6px 8px;
+            }
+        }
+    }
+
+    .aimhigher {
+        margin-top: 20px;
+
+        svg {
+            width: 150px;
+
+            .cls-1 {
+                fill: $primary;
+            }
+
+            .cls-2 {
+                fill: $primary_light_75;
+            }
+        }
+
+        &:active, &:hover, &:focus {
+            svg {    
+                .cls-1 {
+                    fill: #1c75bc;
+                }
+    
+                .cls-2 {
+                    fill: #16a6b1;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    footer {
+        height: 15vh;
+        justify-content: space-between;
+
+        .aimhigher {
+            margin-top: 0;
+            
+            svg {
+                width: 150px;
+            }
+        }
     }
 }

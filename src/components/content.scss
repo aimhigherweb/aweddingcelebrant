@@ -1,5 +1,7 @@
+@import '../variables.scss';
 
 main {
     margin: 0 auto;
+    padding-top: 65px + 10px + $header_sml;
     max-width: 1200px;
 }
