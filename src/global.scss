@@ -47,3 +47,31 @@ body {
     overflow-x: hidden;
     max-width:100vw;
 }
+
+h1, h2, h3, h4, h5 {
+    color: $primary;
+    font: $font_headings;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    color: $primary_dark_75;
+    font-size: 1.5em;
+}
+
+h4 {
+    color: $primary_dark_75;
+    font-size: 1.4em;
+}
+
+h5 {
+    color: $primary_dark_50;
+    font-size: 1.2em;
+}
