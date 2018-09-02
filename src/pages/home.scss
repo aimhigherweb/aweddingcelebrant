@@ -3,16 +3,29 @@
     overflow: hidden;
     padding: 20px 0;
 
-    img {
+    $gap: 40px;
+    $imageSize: 200px;
+
+    img,.image-container {
         float: left;
-        margin-right: 10px;
+        height: $imageSize;
+        margin-right: $gap;
+        overflow: hidden;
+        width: $imageSize;
+
+        img {
+            height: 100%;
+                min-height: $imageSize;
+            width: auto;
+                min-width: $imageSize;
+        }
     }
 
     &.right {
-        img {
+        img, .image-container {
             float: right;
             margin-right: 0;
-            margin-left: 10px;
+            margin-left: $gap;
         }
     }
 }
