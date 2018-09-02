@@ -76,6 +76,17 @@ h5 {
     font-size: 1.2em;
 }
 
+a {
+    color: $primary;
+    text-decoration-skip: ink;
+
+    &:active, &:hover, &:focus {
+        background: $secondary;
+        color: $primary;
+        text-decoration: none;
+    }
+}
+
 blockquote {
     font: $font_headings;
     margin: 0.5em 1em;
