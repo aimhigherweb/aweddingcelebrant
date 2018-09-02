@@ -44,6 +44,7 @@ header {
         display: flex;
             align-items: center;
         font: $font_headings;
+        font-size: 1em;
         overflow-x: scroll;
             -webkit-overflow-scrolling: touch;
         padding: 5px 0;
@@ -114,5 +115,11 @@ header {
                 }
             }
         }
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        font-size: 1em;
     }
 }
