@@ -5,3 +5,9 @@ main {
     padding-top: 65px + 10px + $header_sml;
     max-width: 1000px;
 }
+
+@media (min-width: 640px) {
+    main {
+        padding-top: 0;
+    }
+}

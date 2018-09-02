@@ -12,8 +12,10 @@ const IndexPage = () => (
   <Layout>
     <div className="banner">
       <img src="https://images.unsplash.com/photo-1463579934088-98fe605ed062?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=975d59e604cda85412bc6e0088e8ee46&auto=format&fit=crop&w=1350&q=80" />
-      <h1>Janne Martin - Civil Celebrant</h1>
-      <blockquote>Your Ceremony, Your Way</blockquote>
+      <div className="text">
+        <h1>Janne Martin - Civil Celebrant</h1>
+        <blockquote>Your Ceremony, Your Way</blockquote>
+      </div>
     </div>
     <div className="service-blocks">
       <div className="block">

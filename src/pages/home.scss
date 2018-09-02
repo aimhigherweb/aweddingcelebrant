@@ -1,3 +1,54 @@
+@import '../variables.scss';
+
+.banner {
+    height: calc(100vh - 65px - 30px - #{$header_sml});
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+
+    &:after {
+        background: rgba(#fff, 0.5);
+        content: '';
+        position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        z-index: 0;
+    }
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+
+    .text {
+        position: absolute;
+            top: 20px;
+            left: 10px;
+        width: 90%;
+        z-index: 5;
+    }
+
+    h1 {
+        color: $primary_dark_90;
+        font-weight: bold;
+    }
+
+    blockquote {
+        font-style: italic;
+
+        &:before, &:after {
+            content: normal;
+        }
+    }
+}
+
+.service-blocks {
+    margin: 0 auto;
+    width: 90%;
+}
+
 .block {
     clear: both;
     overflow: hidden;
@@ -27,5 +78,30 @@
             margin-right: 0;
             margin-left: $gap;
         }
+    }
+}
+
+@media (min-width: 640px) {
+    .banner {
+        img {
+            height: auto;
+                min-height: 100%;
+                min-width: 100vw;
+        }
+
+        .text {
+            top: 10vh;
+            left: 10vw;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .banner {
+        left: calc(-1 * (50vw - 500px));
+    }
+
+    .text {
+        font-size: 1.5em;
     }
 }
