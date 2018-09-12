@@ -27,7 +27,7 @@ const IndexPage = () => (
         </div>
         <h2>Wedding Celebrant</h2>
         <p>With years of experience, I look forward to making this day everything you ever dreamed it would be.</p>
-        <Link className="btn secondary" to="/weddings">Find out More</Link>
+        <a className="btn secondary" href="/weddings">Find out More</a>
       </Link>
       <Link to="/weddings#commitment-ceremonies" className="block right">
         <div className="image-container">
