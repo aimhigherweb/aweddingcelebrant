@@ -3,11 +3,13 @@ import { Link } from 'gatsby'
 import {Facebook} from 'react-feather'
 
 import AimhigherLogo from '../images/aimhigher.svg';
+import SSM from '../images/ssm.svg';
 
 import './footer.scss';
 
 const Footer = () => (
     <footer>
+        <SSM className="ssm" />
         <nav>
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>

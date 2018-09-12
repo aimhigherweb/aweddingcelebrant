@@ -9,6 +9,7 @@ header {
         top: 0;
         right: 0;
         left: 0;
+    z-index: 50;
 
     img, svg {
         max-height: 100%;
@@ -148,6 +149,11 @@ header {
 @media (min-width: 1000px) {
     header {
         font-size: 1.4em;
+        height: $header_lrg - $header_overlay;
+
+        .logo {
+            height: $header_lrg;
+        }
 
         .phone {
             font-size: 0.7em;

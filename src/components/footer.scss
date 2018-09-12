@@ -13,7 +13,14 @@ footer {
         max-height: 100%;
     }
 
+    .ssm {
+        height: 20px;
+        width: auto;
+    }
+
     nav {
+        align-items: center;
+
         a {
             padding: 5px 10px 10px;
     
@@ -65,12 +72,28 @@ footer {
         height: 15vh;
         justify-content: space-between;
 
+        .ssm {
+            height: 30px;
+        }
+
         .aimhigher {
             margin-top: 0;
             
             svg {
                 width: 150px;
             }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    footer {
+        .ssm {
+            position: absolute;
+        }
+    
+        nav:not(.social) {
+            margin-left: 40px;
         }
     }
 }

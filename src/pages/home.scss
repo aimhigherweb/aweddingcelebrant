@@ -118,6 +118,7 @@
 @media (min-width: 1000px) {
     .banner {
         left: calc(-1 * (50vw - 500px));
+        top: -1 * $content_padding_top;
 
         .text {
             font-size: 1.9em;
