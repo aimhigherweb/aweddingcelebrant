@@ -39,6 +39,7 @@ header {
     }
 
     nav {
+        align-self: center;
         border-top: 2px solid $primary;
         border-bottom: 2px solid $primary;
         display: flex;
@@ -55,6 +56,7 @@ header {
         white-space: nowrap;
 
         &::-webkit-scrollbar {
+            height: 0px;
             width: 0px;
         }
 
@@ -83,6 +85,19 @@ header {
             &:active, &:hover, &:focus {
                 background: $primary_light_10;
             }
+        }
+    }
+
+    .phone {
+        align-self: center;
+        display: block;
+        padding: 5px 10px;
+        position: absolute;
+            top: 10px;
+            right: 0px;
+
+        span {
+            display: none;
         }
     }
 }
@@ -117,11 +132,25 @@ header {
                 }
             }
         }
+
+        .phone {
+            display: flex;
+            align-items: center;
+
+            span {
+                display: inline-block;
+                margin-left: 10px;
+            }
+        }
     }
 }
 
 @media (min-width: 1000px) {
     header {
         font-size: 1.4em;
+
+        .phone {
+            font-size: 0.7em;
+        }
     }
 }
