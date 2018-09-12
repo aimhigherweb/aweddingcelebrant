@@ -35,7 +35,7 @@ const IndexPage = () => (
         </div>
         <h2>Commitment Ceremonies</h2>
         <p>I am delighted to be able to carry out Commitment Ceremonies for couples who share a life together and want the world to know.</p>
-        <Link className="btn secondary" to="/weddings#commitment-ceremonies">Find out More</Link>
+        <a className="btn secondary" to="/weddings#commitment-ceremonies">Find out More</a>
       </Link>
       <Link to="/other-services#naming-services" className="block">
         <img src={baby} alt="Photo of 2 hands holding a newborn baby's foot" />
