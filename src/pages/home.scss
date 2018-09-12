@@ -55,18 +55,26 @@
     width: 90%;
 }
 
+$gap: 40px;
+$imageSize: 200px;
+
 .block {
     clear: both;
+    display: block;
     overflow: hidden;
-    padding: 20px 0;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
 
-    $gap: 40px;
-    $imageSize: 200px;
+    &:active, &:hover, &:focus {
+        background: $secondary_light_25;
+        border: 4px solid $primary;
+        padding: 16px;
+    }
 
     img,.image-container {
-        float: left;
         height: $imageSize;
-        margin-right: $gap;
+        margin: 0 auto;
         overflow: hidden;
         width: $imageSize;
 
@@ -77,14 +85,6 @@
                 min-width: $imageSize;
         }
     }
-
-    &.right {
-        img, .image-container {
-            float: right;
-            margin-right: 0;
-            margin-left: $gap;
-        }
-    }
 }
 
 @media (min-width: 500px) {
@@ -92,6 +92,27 @@
         .text {
             font-size: 1.5em;
             left: 20px;
+        }
+    }
+
+    .block {
+        text-align: left;
+
+
+        img, .image-container {
+            float: left;
+            margin-right: $gap;
+            margin-left: 0;
+        }
+
+        &.right {
+            text-align: right;
+
+            img, .image-container {
+                float: right;
+                margin-right: 0;
+                margin-left: $gap;
+            }
         }
     }
 }
