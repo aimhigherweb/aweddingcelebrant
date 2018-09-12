@@ -7,11 +7,13 @@ import './home.scss';
 import baby from '../images/baby.jpg';
 import coupleBeach from '../images/couple-on-beach.jpg';
 import funeral from '../images/funeral.jpg';
+import banner from '../images/banner.jpg';
+import wedding from '../images/wedding.jpg';
 
 const IndexPage = () => (
   <Layout>
     <div className="banner">
-      <img src="https://images.unsplash.com/photo-1463579934088-98fe605ed062?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=975d59e604cda85412bc6e0088e8ee46&auto=format&fit=crop&w=1350&q=80" />
+      <img src={banner} alt="Photo of a bride being walked down a large set of sandstone steps by her father, walking down the aisle lined with a long red carpet. It's outdoors and there are hedges and greenery all around." />
       <div className="text">
         <h1>Janne Martin - Civil Celebrant</h1>
         <blockquote>Your Ceremony, Your Way</blockquote>
@@ -20,7 +22,7 @@ const IndexPage = () => (
     <div className="service-blocks">
       <div className="block">
         <div className="image-container">
-          <img src="https://images.unsplash.com/photo-1463579934088-98fe605ed062?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=975d59e604cda85412bc6e0088e8ee46&auto=format&fit=crop&w=1350&q=80" />
+          <img src={wedding} alt="Photo of Janne holding a microphone for the bride who is saying her vows, the background is of the Swan River in Perth with part of Kings Park in the distance. The groom is also in the shot and is listening to the bride." />
         </div>
         <h2>Wedding Celebrant</h2>
         <p>With years of experience, I look forward to making this day everything you ever dreamed it would be.</p>
