@@ -111,3 +111,27 @@ blockquote {
         bottom: -0.7em;
     }
 }
+
+button, .btn {
+    background: $primary;
+    border: 2px solid $primary;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 15px;
+    text-decoration: none;
+
+    &:active, &:hover, &:focus {
+        background: #fff;
+        color: $primary;
+    }
+
+    &.secondary {
+        background: #fff;
+        color: $primary;
+
+        &:active, &:hover, &:focus {
+            background: $primary;
+            color: #fff;
+        }
+    }
+}
