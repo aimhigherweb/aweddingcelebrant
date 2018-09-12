@@ -17,3 +17,15 @@ main {
         padding-top: $content_padding_top;
     }
 }
+
+summary {
+    color: $primary_dark_90;
+    font: $font_headings;
+    font-size: 1.2em;
+
+    list-style: none;
+
+    &::-webkit-details-marker {
+        display: none;
+    }
+}
