@@ -1,0 +1,20 @@
+form {
+    margin: 0 auto;
+    max-width: 500px;
+
+    label {
+        display: flex;
+            flex-wrap: wrap;
+        margin: 10px 0;
+    }
+
+    input {
+        margin-left: auto;
+        width: 50%;
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+    }
+}
