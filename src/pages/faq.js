@@ -2,6 +2,8 @@ import React from 'react'
 
 import Layout from '../components/layout'
 
+import Form from './notice+of+intended+marriage+form.pdf'
+
 const FAQ = () => (
   <Layout>
     <h1>FAQ</h1>
@@ -16,7 +18,7 @@ const FAQ = () => (
     <details open>
       <summary>Notice of Intended Marriage form</summary>
       <p>Please be aware that unless you are currently overseas, you will need to fill out the Notice of Intended Marriage form with your chosen Celebrant. I will guide you through the process, informing you of all the legal requirements, witnessing your signatures and registering your marriage with the West Australian Registrar’s office. For any further information, please don’t hesitate to contact me.</p>
-      <a class="btn secondary" href="/notice+of+intended+marriage+form.pdf" target="_blank">Download Form</a>
+      <a class="btn secondary" href={Form} target="_blank">Download Form</a>
     </details>
   </Layout>
 )

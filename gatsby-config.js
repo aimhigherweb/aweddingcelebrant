@@ -17,6 +17,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+          },
+        ],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
           include: './src/images/'
