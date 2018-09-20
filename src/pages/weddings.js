@@ -15,7 +15,7 @@ const Weddings = () => (
     <p>Give me a call now to take your very first step towards an amazing and memorable Wedding Day.</p>
     <blockquote className="testimonial">
       <p>We were looking for a professional and welcoming wedding celebrant, that would help us feel comfortable and support us in having our ceremony play out the way we always imagined it would do. After an initial meeting with Janne, it was clear that there was no better choice for us.</p>
-      <p>Janne went above and beyond, working with us to refine our vowels and ceremony plan, even helping figure out how our Westies could play a part.</p>
+      <p>Janne went above and beyond, working with us to refine our vows and ceremony plan, even helping figure out how our Westies could play a part.</p>
       <p>We would have absolutely no hesitation in recommending Janne’s services as a wedding celebrant, and she’ll be our first port of call for any occasion that our family needs a celebrant.</p>
       <span>Leah and Ben Derham</span>
     </blockquote>
