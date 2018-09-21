@@ -3,15 +3,15 @@ import React from 'react'
 import Layout from '../components/layout'
 
 import Wedding from '../images/wedding_kingspark.jpg'
-import YoungCouple from '../images/young_couple.jpg'
 import Couple from '../images/couple-on-beach.jpg'
+import Rings from '../images/rings.jpg'
 
 const Weddings = () => (
   <Layout>
     <h1>Weddings</h1>
     <p>With years of experience, I look forward to making this day everything you ever dreamed it would be.</p>
     <h3>Why do so many couples choose me?</h3>
-    <img src={YoungCouple} class="right" />
+    <img src={Wedding} class="right" />
     <p>I am a dedicated Celebrant, who takes great delight in providing my couples with a ceremony that will be remembered, cherished and celebrated for the rest of their lives.</p>
     <p>I’ll give you several different ceremonies to choose from and once you have decided on the basic ceremony, we will then work together in making it unique for you. I have numerous readings, poems and prayers that you can choose from or you can even source your own. You may also wish to have a very special friend or relative read one of these or perhaps sing a ‘favourite’ song, to make your wedding ceremony a very memorable event to kick start your lives together as Husband and Wife.</p>
     <p>Over a period of 3 – 4 appointments (including a rehearsal) we will fine tune the ceremony so that on the day there will be no hiccups. You will be able to choose the vows I provide or write you own if you wish.</p>
@@ -25,7 +25,7 @@ const Weddings = () => (
       <span>Leah and Ben Derham</span>
     </blockquote>
     <h2 id="commitment-ceremonies">Commitment Service</h2>
-    <img src={Wedding} />
+    <img src={Rings} />
     <p>With years of experience, I look forward to making this day everything you ever dreamed it would be.</p>
     <p>No matter who you love you deserve to have a service that reflects your feelings.</p>
     <p>I am delighted to be able to carry out Commitment Ceremonies for couples who share a life together and want the world to know. As with my wedding ceremonies, I will put together a ceremony for you that will be unique to all others. We will go over the wording together and fine tune it until you are both happy and excited about it. Naturally you will choose to have different poems, readings and perhaps even songs to make your special event one that you will cherish forever.</p>

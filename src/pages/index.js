@@ -10,6 +10,7 @@ import coupleBeach from '../images/couple-on-beach.jpg';
 import funeral from '../images/funeral.jpg';
 import banner from '../images/banner.jpg';
 import wedding from '../images/wedding.jpg';
+import Rings from '../images/rings.jpg'
 
 const IndexPage = () => (
   <Layout>
@@ -31,7 +32,7 @@ const IndexPage = () => (
       </div>
       <div to="/weddings/#commitment-ceremonies" className="block right">
         <div className="image-container">
-          <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9699a304159246af55ed7002f6ef7f8a&auto=format&fit=crop&w=1350&q=80" />
+          <img src={Rings} />
         </div>
         <h2>Commitment Ceremonies</h2>
         <p>I am delighted to be able to carry out Commitment Ceremonies for couples who share a life together and want the world to know.</p>
