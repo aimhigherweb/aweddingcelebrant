@@ -32,20 +32,21 @@ summary {
 }
 
 .testimonial {
+    border-left: none;
     color: $primary;
     font-size: 1.1em;
+    padding-left: 0;
 
     &:before {
         color: $secondary_light_50;
+        content: '\201C';
         font-weight: bold;
         font-size: 15em;
-        top: -0.13em;
-        left: -0.1em;
+        line-height: 1;
+        position: absolute;
+            top: -0.13em;
+            left: -0.1em;
         z-index: -1;
-    }
-
-    &:after {
-        content: normal;
     }
 
     span {

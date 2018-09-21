@@ -40,9 +40,11 @@
     }
 
     blockquote {
+        border: none;
         color: $primary;
         font-size: 1.15em;
         font-style: italic;
+        padding-left: 0;
 
         &:before, &:after {
             content: normal;

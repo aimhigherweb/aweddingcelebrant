@@ -88,29 +88,13 @@ a {
 }
 
 blockquote {
+    border-left: 5px solid $secondary;
     clear: both;
+    color: $primary_dark_90;
     font: $font_headings;
     margin: 0.5em 1em;
+    padding-left: 20px;
     position: relative;
-
-    &:before, &:after {
-        color: $primary;
-        font-size: 3em;
-        line-height: 1;
-        position: absolute;
-    }
-
-    &:before {
-        content: '\201C';
-        left: -0.4em;
-        top: -0.2em;
-    }
-
-    &:after {
-        content: '\201D';
-        right: -0.4em;
-        bottom: -0.7em;
-    }
 }
 
 button, .btn {
