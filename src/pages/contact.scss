@@ -1,20 +1,33 @@
+@import '../variables.scss';
+
 form {
-    margin: 0 auto;
+    font-size: 1em;
     max-width: 500px;
 
     label {
+        color: $primary_light_90;
         display: flex;
             flex-wrap: wrap;
+        font-weight: bold;
         margin: 10px 0;
     }
 
-    input {
+    input, textarea {
+        border: 1px solid $primary;
+        background: $primary_light_10;
         margin-left: auto;
-        width: 50%;
+        padding: 5px 10px;
+        width: 60%;
     }
 
     textarea {
         display: block;
+        margin-top: 10px;
         width: 100%;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 25px;
     }
 }
