@@ -1,6 +1,7 @@
 @import '../variables.scss';
 
 main {
+    clear: both;
     margin: 0 auto;
     padding-top: 65px + 10px + $header_sml;
     width: 90%;
@@ -8,6 +9,7 @@ main {
 
     img {
         display: block;
+        float: left;
         max-height: 350px;
         margin: 0 10px 10px;
         max-width: 350px;
@@ -22,11 +24,39 @@ summary {
     color: $primary_dark_90;
     font: $font_headings;
     font-size: 1.2em;
-
     list-style: none;
 
     &::-webkit-details-marker {
         display: none;
+    }
+}
+
+.testimonial {
+    color: $primary;
+    font-size: 1.1em;
+
+    &:before {
+        color: $secondary_light_50;
+        font-weight: bold;
+        font-size: 15em;
+        top: -0.13em;
+        left: -0.1em;
+        z-index: -1;
+    }
+
+    &:after {
+        content: normal;
+    }
+
+    span {
+        color: $primary_dark_90;
+        font-size: 0.9em;
+        padding-left: 1em;
+
+        &:before {
+            content: '-';
+            margin-right: 0.5em;
+        }
     }
 }
 
