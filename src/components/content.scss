@@ -5,17 +5,16 @@ main {
     padding-top: 65px + 10px + $header_sml;
     width: 90%;
         max-width: 1000px;
-}
 
-@media (min-width: 640px) {
-    main {
-        padding-top: 0;
-    }
-}
+    img {
+        display: block;
+        max-height: 350px;
+        margin: 0 10px 10px;
+        max-width: 350px;
 
-@media (min-width: 1000px) {
-    main {
-        padding-top: $content_padding_top;
+        &.right {
+            float: right;
+        }
     }
 }
 
@@ -28,5 +27,17 @@ summary {
 
     &::-webkit-details-marker {
         display: none;
+    }
+}
+
+@media (min-width: 640px) {
+    main {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    main {
+        padding-top: $content_padding_top;
     }
 }

@@ -19,14 +19,14 @@ const Weddings = () => (
       <p>We would have absolutely no hesitation in recommending Janne’s services as a wedding celebrant, and she’ll be our first port of call for any occasion that our family needs a celebrant.</p>
       <span>Leah and Ben Derham</span>
     </blockquote>
-    <h2>Commitment Service</h2>
+    <h2 id="commitment-ceremonies">Commitment Service</h2>
     <p>With years of experience, I look forward to making this day everything you ever dreamed it would be.</p>
     <p>No matter who you love you deserve to have a service that reflects your feelings.</p>
     <p>I am delighted to be able to carry out Commitment Ceremonies for couples who share a life together and want the world to know. As with my wedding ceremonies, I will put together a ceremony for you that will be unique to all others. We will go over the wording together and fine tune it until you are both happy and excited about it. Naturally you will choose to have different poems, readings and perhaps even songs to make your special event one that you will cherish forever.</p>
     <p>We will also carry out a rehearsal at your chosen place for the ceremony checking every detail to ensure it is perfect in every way.</p>
     <p>Tell the world who you love, proudly and with the formality you deserve.</p>
     <blockquote>Your Ceremony Your Way.</blockquote>
-    <h2>Renewal of Vows</h2>
+    <h2 id="renew-vows">Renewal of Vows</h2>
     <p>A Renewal of Vows ceremony is something that can be extremely special whether you have been married 50 years, 25 years or perhaps even one year. Yes even after a year very romantic and loving couples renew or reaffirm their vows in a loving and beautiful environment.</p>
     <p>Perhaps you eloped numerous years ago because you didn’t want the huge affair that your parents were organizing or you didn’t want your parents to know that you were getting married. You may have been married overseas without family and friends present and now want to have a ceremony with them present. Or you may have had the situation where parents of either the Bride or Groom couldn’t be present for the big occasion so you now want to have a ceremony that includes them. How lovely would that be?</p>
     <p>I have some beautiful ceremonies that you could choose from and you can even modify those ceremonies to make them unique to your requirements. With beautiful verses signifying your continued love for one another.</p>

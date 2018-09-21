@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 const OtherServices = () => (
   <Layout>
     <h1>Other Services</h1>
-    <h2>Naming Ceremony</h2>
+    <h2 id="naming-services">Naming Ceremony</h2>
     <p>This magical ceremony will give you and your family memories for a lifetime.</p>
     <p>In today’s busy world many families don’t have time to attend a church, therefore when it comes to giving their child a christening, many churches won’t carry out a service if the family doesn’t attend the church all year round. Therefore, a Naming Ceremony is about the only way they can formalize the naming of the newest member of their family. That beautiful little bundle of joy who has to have a name to get them through life.</p>
     <p>As a mother and grandmother who adores her offspring, I absolutely love carrying out a Naming Ceremony! Whether it is a small baby or young children, to carry out the service is very special to me. All children no matter what their age, have wonderful personalities and these can often be seen and encouraged throughout a Naming Ceremony.</p>

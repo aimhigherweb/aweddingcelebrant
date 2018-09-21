@@ -116,7 +116,9 @@ button, .btn {
     background: $primary;
     border: 2px solid $primary;
     color: #fff;
+    display: inline-block;
     font-weight: bold;
+    margin-top: 5px;
     padding: 5px 15px;
     text-decoration: none;
 
