@@ -38,7 +38,7 @@ const Contact = () => (
             <button type="submit">Submit</button>
         </form>
         <div>
-            <iframe src="//mapkit.io/embed/jIVAMV" height="400" width="600"></iframe>
+            <iframe src="//mapkit.io/embed/jIVAMV"></iframe>
             <p><strong>Phone: </strong> <a href="tel:+61894018427" target="_blank">08 9401 8427</a></p>
             <p><strong>Mobile: </strong> <a href="tel:+61418955198" target="_blank">0418 955 198</a></p>
         </div>

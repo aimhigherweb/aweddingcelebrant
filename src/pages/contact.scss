@@ -2,7 +2,9 @@
 
 form {
     font-size: 1em;
-    max-width: 500px;
+    padding-bottom: 20px;
+    width: 100%;
+        max-width: 600px;
 
     label {
         color: $primary_light_90;
@@ -15,15 +17,14 @@ form {
     input, textarea {
         border: 1px solid $primary;
         background: $primary_light_10;
-        margin-left: auto;
+        margin-top: 10px;
         padding: 5px 10px;
-        width: 60%;
+        width: 100%;
+            max-width: 400px;
     }
 
     textarea {
         display: block;
-        margin-top: 10px;
-        width: 100%;
     }
 
     button {
@@ -34,14 +35,72 @@ form {
 
 .split {
     display: flex;
-    justify-content: space-between;
-
-    > * {
-        padding: 10px;
-        width: 48%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    > div {
+        width: 100%;
     }
 }
 
 iframe {
     border: none;
+    height: 90vw;
+        max-height: 400px;
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    form {
+        input {
+            margin-left: auto;
+            margin-top: 0;
+            width: 55%;
+        }
+    
+        textarea {
+            width: 100%;
+                max-width: 100%;
+        } 
+    }
+}
+
+@media (min-width: 640px) {
+    form {
+        width: 55%;
+
+        input {
+            margin-top: 10px;
+            width: 100%;
+        }
+    }
+
+    .split {    
+        > div {
+            width: 40%;
+        }
+    }
+}
+
+@media (min-width: 870px) {
+    form {
+        input {
+            margin-left: auto;
+            margin-top: 0;
+            width: 55%;
+        }
+    
+        textarea {
+            width: 100%;
+                max-width: 100%;
+        } 
+    }
+}
+
+@media (min-width: 1000px) {
+    form {
+        input {
+            width: 60%;
+        }
+    }
 }

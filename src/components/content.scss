@@ -3,7 +3,8 @@
 main {
     margin: 0 auto;
     padding-top: 65px + 10px + $header_sml;
-    max-width: 1000px;
+    width: 90%;
+        max-width: 1000px;
 }
 
 @media (min-width: 640px) {
