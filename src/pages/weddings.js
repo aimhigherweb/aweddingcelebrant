@@ -11,7 +11,7 @@ const Weddings = () => (
     <h1>Weddings</h1>
     <p>With years of experience, I look forward to making this day everything you ever dreamed it would be.</p>
     <h3>Why do so many couples choose me?</h3>
-    <img src={Wedding} class="right" />
+    <img src={Wedding} className="right" />
     <p>I am a dedicated Celebrant, who takes great delight in providing my couples with a ceremony that will be remembered, cherished and celebrated for the rest of their lives.</p>
     <p>I’ll give you several different ceremonies to choose from and once you have decided on the basic ceremony, we will then work together in making it unique for you. I have numerous readings, poems and prayers that you can choose from or you can even source your own. You may also wish to have a very special friend or relative read one of these or perhaps sing a ‘favourite’ song, to make your wedding ceremony a very memorable event to kick start your lives together as Husband and Wife.</p>
     <p>Over a period of 3 – 4 appointments (including a rehearsal) we will fine tune the ceremony so that on the day there will be no hiccups. You will be able to choose the vows I provide or write you own if you wish.</p>
