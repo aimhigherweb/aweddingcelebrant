@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 
-import Form from './notice+of+intended+marriage+form.pdf'
+import Form from './notice-of-intended-marriage.pdf'
 
 const FAQ = () => (
   <Layout>
