@@ -13,7 +13,7 @@ import wedding from '../images/wedding.jpg';
 import Rings from '../images/rings.jpg'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout home>
     <div className="banner">
       <img src={banner} alt="Photo of a bride being walked down a large set of sandstone steps by her father, walking down the aisle lined with a long red carpet. It's outdoors and there are hedges and greenery all around." />
       <div className="text">
@@ -31,9 +31,7 @@ const IndexPage = () => (
         <Link className="btn secondary" to="/weddings">Find out More</Link>
       </div>
       <div to="/weddings/#commitment-ceremonies" className="block right">
-        <div className="image-container">
-          <img src={Rings} />
-        </div>
+        <img src={Rings} className="right" />
         <h2>Commitment Ceremonies</h2>
         <p>I am delighted to be able to carry out Commitment Ceremonies for couples who share a life together and want the world to know.</p>
         <Link className="btn secondary" to="/weddings/#commitment-ceremonies">Find out More</Link>

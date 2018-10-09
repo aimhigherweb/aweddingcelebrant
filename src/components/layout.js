@@ -9,7 +9,7 @@ import Footer from './footer';
 import '../global.scss';
 import './content.scss';
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children, data, home }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -31,7 +31,7 @@ const Layout = ({ children, data }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main>
+        <main className={home && 'home'}>
           {children}
         </main>
         <Footer />

@@ -7,16 +7,15 @@ main {
     width: 90%;
         max-width: 1000px;
 
+    &.home {
+        width: 100%;
+    }
+
     img {
         display: block;
-        float: left;
         max-height: 350px;
         margin: 0 10px 10px;
         max-width: 350px;
-
-        &.right {
-            float: right;
-        }
     }
 }
 
@@ -57,6 +56,18 @@ summary {
         &:before {
             content: '-';
             margin-right: 0.5em;
+        }
+    }
+}
+
+@media (min-width:500px) {
+    main {
+        img {
+            float: left;
+    
+            &.right {
+                float: right;
+            }
         }
     }
 }

@@ -20,9 +20,10 @@
     img {
         display: block;
         height: calc((9/16) * 100vw);
+            max-height: unset;
         margin: 0 auto;
         width: 100vw;
-            max-height: unset;
+            max-width: unset;
     }
 
     .text {
@@ -65,17 +66,11 @@ $imageSize: 200px;
     clear: both;
     display: block;
     overflow: hidden;
-    padding: 20px;
+    padding: 20px 15px;
     text-align: center;
     text-decoration: none;
 
-    &:active, &:hover, &:focus {
-        background: $secondary_light_25;
-        border: 4px solid $primary;
-        padding: 16px;
-    }
-
-    img,.image-container {
+    img {
         height: $imageSize;
         margin: 0 auto;
         overflow: hidden;
@@ -101,8 +96,11 @@ $imageSize: 200px;
     .block {
         text-align: left;
 
+        h2 {
+            margin: 0;
+        }
 
-        img, .image-container {
+        img {
             float: left;
             margin-right: $gap;
             margin-left: 0;
