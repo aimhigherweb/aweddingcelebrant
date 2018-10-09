@@ -14,8 +14,7 @@ main {
     img {
         display: block;
         max-height: 350px;
-        margin: 0 10px 10px;
-        max-width: 350px;
+        max-width: 100%;
     }
 }
 
@@ -60,10 +59,19 @@ summary {
     }
 }
 
+@media (min-width:400px) {
+    main {
+        img {
+            max-width: 350px;
+        }
+    }
+}
+
 @media (min-width:500px) {
     main {
         img {
             float: left;
+            margin: 0 10px 10px;
     
             &.right {
                 float: right;
