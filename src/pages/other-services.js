@@ -5,8 +5,14 @@ import Layout from '../components/layout'
 import Baby from '../images/baby.jpg';
 import Couple from '../images/couple-on-beach.jpg';
 
+const meta = {
+	name: 'Other Services',
+	description: 'I also offer other services including Naming Ceremonies and Vow Renewals',
+	slug: '/other-services'
+};
+
 const OtherServices = () => (
-  <Layout>
+  <Layout meta={meta}>
     <h1>Other Services</h1>
     <h2 id="naming-services">Naming Ceremony</h2>
     <p>This magical ceremony will give you and your family memories for a lifetime.</p>

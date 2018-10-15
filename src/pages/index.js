@@ -12,8 +12,13 @@ import banner from '../images/banner.jpg';
 import wedding from '../images/wedding.jpg';
 import Rings from '../images/rings.jpg'
 
+const meta = {
+	description: 'With years of experience helping to make each ceremony you have, a very special one to remember',
+	slug: '/'
+};
+
 const IndexPage = () => (
-  <Layout home>
+  <Layout home meta={meta}>
     <div className="banner">
       <img src={banner} alt="Photo of a bride being walked down a large set of sandstone steps by her father, walking down the aisle lined with a long red carpet. It's outdoors and there are hedges and greenery all around." />
       <div className="text">

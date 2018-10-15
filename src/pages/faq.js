@@ -4,8 +4,14 @@ import Layout from '../components/layout'
 
 import Form from './notice-of-intended-marriage.pdf'
 
+const meta = {
+	name: 'FAQ',
+	description: 'You will find a wealth of information regarding all aspects of the legal requirements in Western Australia plus many ideas and other resources to make your service come to life',
+	slug: '/faq'
+};
+
 const FAQ = () => (
-  <Layout>
+  <Layout meta={meta}>
     <h1>FAQ</h1>
     <p>You will find a wealth of information regarding all aspects of the legal requirements in Western Australia plus many ideas and other resources to make your service come to life.</p>
     <details open>

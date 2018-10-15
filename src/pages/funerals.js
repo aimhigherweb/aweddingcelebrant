@@ -4,8 +4,15 @@ import Layout from '../components/layout'
 
 import Funeral from '../images/funeral.jpg'
 
+const meta = {
+	name: 'Funerals',
+	description: 'With compassion and attention to detail, I will ensure your loved ones are remembered as they deserve to be.',
+  slug: '/funerals',
+  image: Funeral
+};
+
 const Funerals = () => (
-  <Layout>
+  <Layout meta={meta}>
     <h1>Funerals</h1>
     <p>With compassion and attention to detail, I will ensure your loved ones are remembered as they deserve to be.</p>
     <img class="right" src={Funeral} />

@@ -4,8 +4,14 @@ import Layout from '../components/layout'
 
 import Janne from '../images/janne.jpg';
 
+const meta = {
+	name: 'About Janne',
+	description: 'With years of experience helping to make each ceremony you have, a very special one to remember',
+	slug: '/about'
+};
+
 const About = () => (
-	<Layout>
+	<Layout meta={meta}>
 		<h1>About Janne</h1>
 		<p>With years of experience helping to make each ceremony you have, a very special one to remember</p>
 		<img className="right" src={Janne} />

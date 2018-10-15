@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Janne Martin - Wedding Celebrant',
+    title: 'Janne Martin | Wedding Celebrant',
+    description: '',
+    siteUrl: 'https://aweddingcelebrant.com.au'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -8,7 +10,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         start_url: '/',
-        icon: 'src/images/logo.png' // This path is relative to the root of the site.
+        icon: './src/images/logo.png' // This path is relative to the root of the site.
       },
     },
     {

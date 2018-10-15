@@ -4,8 +4,14 @@ import Layout from '../components/layout'
 
 import './contact.scss'
 
+const meta = {
+	name: 'Contact Janne',
+	description: 'Get in touch to see how I can help you make your ceremony one to remember',
+	slug: '/contact'
+};
+
 const Contact = () => (
-  <Layout>
+  <Layout meta={meta}>
     <h1>Contact</h1>
     <div className="split">
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">

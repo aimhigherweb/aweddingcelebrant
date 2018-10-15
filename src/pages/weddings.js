@@ -6,8 +6,14 @@ import Wedding from '../images/wedding_kingspark.jpg'
 import Couple from '../images/couple-on-beach.jpg'
 import Rings from '../images/rings.jpg'
 
+const meta = {
+	name: 'Weddings',
+	description: 'I am a dedicated Celebrant, who takes great delight in providing my couples with a ceremony that will be remembered, cherished and celebrated for the rest of their lives',
+	slug: '/weddings'
+};
+
 const Weddings = () => (
-  <Layout>
+  <Layout meta={meta}>
     <h1>Weddings</h1>
     <p>With years of experience, I look forward to making this day everything you ever dreamed it would be.</p>
     <h3>Why do so many couples choose me?</h3>
