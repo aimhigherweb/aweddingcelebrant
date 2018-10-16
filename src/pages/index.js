@@ -22,7 +22,7 @@ const IndexPage = () => (
     <div className="banner">
       <img src={banner} alt="Photo of a bride being walked down a large set of sandstone steps by her father, walking down the aisle lined with a long red carpet. It's outdoors and there are hedges and greenery all around." />
       <div className="text">
-        <h1>Janne Martin - Civil Celebrant</h1>
+        <h1>Janne Martin - Registered Celebrant</h1>
         <blockquote>Your Ceremony, Your Way</blockquote>
       </div>
     </div>
