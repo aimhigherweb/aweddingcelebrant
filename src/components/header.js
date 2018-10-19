@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Media from 'react-media'
 
 import {Phone} from 'react-feather'
 
