@@ -13,24 +13,20 @@ const meta = {
 };
 
 const Gallery = ({data}) => {
-  let images = {},
-      imageData = data.allFile.edges;
+  let imageData = data.allFile.edges;
 
-  imageData.map((image) => {
-    images[image.node.name] = image.node.childImageSharp.fixed;
-  })
-
-  let gallery = images.map((image) => (
+  let gallery = imageData.map((image) => (
     <Img
-        fixed={image}
+        fixed={image.node.childImageSharp.fixed}
         Tag='figure'
+        imgStyle={{objectFit: 'top', height: 'auto'}}
     />
   ))
 
   return  (
-    <Layout meta={meta}>
+    <Layout meta={meta} customClass="gallery">
       <h1>Gallery</h1>
-      <div class="gallery">
+      <div class="gallery-images">
         {gallery}
       </div>
     </Layout>
@@ -47,7 +43,7 @@ export const query = graphql`
         node {
           name
           childImageSharp {
-            fixed(height: 400, quality: 80) {
+            fixed(height: 500, quality: 80) {
               ...GatsbyImageSharpFixed_withWebp
             }
           }

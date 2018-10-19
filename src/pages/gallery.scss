@@ -1,4 +1,22 @@
 .gallery {
+    max-width: 1200px;
+}
+
+.gallery-images {
     display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+    margin: -10px;
+
+    figure {
+        flex: 1 1 auto;
+        // height: 300px;
+            max-height: unset;
+        margin: 10px;
+        max-width: 590px;
+
+        img {
+            max-height: unset;
+        }
+    }
 }

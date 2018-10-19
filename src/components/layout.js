@@ -10,7 +10,7 @@ import Logo from '../images/logo.png';
 import '../global.scss';
 import './content.scss';
 
-const Layout = ({ children, data, home, meta }) => (
+const Layout = ({ children, data, home, meta, customClass }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -30,7 +30,7 @@ const Layout = ({ children, data, home, meta }) => (
         <Fragment>
           <Meta {...meta} url={url} siteName={siteTitle} />
           <Header siteTitle={data.site.siteMetadata.title} />
-          <main className={home && 'home'}>
+          <main className={home ? 'home' : customClass}>
             {children}
           </main>
           <Footer />
