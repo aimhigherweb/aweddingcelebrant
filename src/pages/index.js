@@ -15,7 +15,6 @@ const meta = {
 const IndexPage = ({data}) => {
   let images = {},
       imageData = data.allFile.edges;
-      console.log(imageData)
 
   imageData.map((image) => {
     images[image.node.name] = image.node.childImageSharp.fixed;
