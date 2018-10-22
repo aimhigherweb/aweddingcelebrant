@@ -27,7 +27,6 @@ const Gallery = ({data}) => {
       <Img
           fixed={image.node.childImageSharp.fixed}
           Tag='figure'
-          imgStyle={{objectFit: 'top', height: 'auto', width: 'normal'}}
           className={ori}
           style={{height: 'normal', width: 'normal', display: 'block'}}
       />
