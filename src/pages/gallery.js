@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
 import './gallery.scss';
+import { normalize } from 'path';
 
 const meta = {
 	name: 'Gallery',
@@ -15,13 +16,23 @@ const meta = {
 const Gallery = ({data}) => {
   let imageData = data.allFile.edges;
 
-  let gallery = imageData.map((image) => (
-    <Img
-        fixed={image.node.childImageSharp.fixed}
-        Tag='figure'
-        imgStyle={{objectFit: 'top', height: 'auto'}}
-    />
-  ))
+  let gallery = imageData.map((image) => {
+    let ori = 'portrait';
+
+    if(image.node.name.includes('land-')) {
+      ori = 'landscape';
+    }
+
+    return (
+      <Img
+          fixed={image.node.childImageSharp.fixed}
+          Tag='figure'
+          imgStyle={{objectFit: 'top', height: 'auto', width: 'normal'}}
+          className={ori}
+          style={{height: 'normal', width: 'normal', display: 'block'}}
+      />
+    )
+  })
 
   return  (
     <Layout meta={meta} customClass="gallery">
@@ -43,7 +54,7 @@ export const query = graphql`
         node {
           name
           childImageSharp {
-            fixed(height: 500, quality: 80) {
+            fixed(width: 500, quality: 80) {
               ...GatsbyImageSharpFixed_withWebp
             }
           }
