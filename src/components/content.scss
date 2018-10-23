@@ -13,6 +13,12 @@ main {
 
     img {
         display: block;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    figure {
+        display: block;
         max-height: 350px;
         margin: 0 auto;
         max-width: 100%;
@@ -62,7 +68,7 @@ summary {
 
 @media (min-width:400px) {
     main {
-        img {
+        figure {
             max-width: 350px;
         }
     }
@@ -70,7 +76,7 @@ summary {
 
 @media (min-width:500px) {
     main {
-        img {
+        figure {
             float: left;
             margin: 0 10px 10px;
     
@@ -81,7 +87,7 @@ summary {
     }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
     main {
         padding-top: 0;
     }

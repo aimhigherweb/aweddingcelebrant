@@ -1,4 +1,6 @@
 import React from 'react'
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 
@@ -10,11 +12,15 @@ const meta = {
 	slug: '/about'
 };
 
-const About = () => (
+const About = ({data}) => (
 	<Layout meta={meta}>
 		<h1>About Janne</h1>
 		<p>With years of experience helping to make each ceremony you have, a very special one to remember</p>
-		<img className="right" src={Janne} />
+		<Img
+		  fixed={data.file.childImageSharp.fixed}
+		  Tag='figure'
+		  className='right'
+        />
 		<p>I am a very energetic and vibrant Celebrant who absolutely loves being in this wonderful industry. I adore carrying out the ceremonies and put in 100% effort with every single one! Each ceremony I do is just as important as the very first one I did over 10 years ago.</p>
 		<p>I decided to become a Registered Celebrant because I was bored with my job at the time and I decided that I wanted to be my own boss and work in an industry that gave me a fabulous sense of achievement.</p>
 		<p>I have been married since 1973 to the same wonderful man and have raised two handsome sons who have blessed me with four of the most loveable and beautiful grandchildren in the world. (Well that’s my opinion!)</p>
@@ -24,5 +30,17 @@ const About = () => (
 		<blockquote>Your Ceremony Your Way!</blockquote>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+      file(relativePath: {eq: "janne.jpg"}) {
+          childImageSharp {
+            fixed(height: 350, quality: 80) {
+              ...GatsbyImageSharpFixed_withWebp
+            }
+          }
+      }
+  }
+`
 
 export default About

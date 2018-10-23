@@ -13,6 +13,15 @@ module.exports = {
         icon: './src/images/logo.png' // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-sharp',
+      'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `./src/images`,
+        name: 'images',
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

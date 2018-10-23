@@ -103,7 +103,7 @@ header {
     }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
     header {
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -146,6 +146,12 @@ header {
 }
 
 @media (min-width: 870px) {
+    header {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 950px) {
     header {
         font-size: 1.2em;
     }

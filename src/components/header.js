@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Media from 'react-media'
 
 import {Phone} from 'react-feather'
 
@@ -15,6 +14,7 @@ const Header = () => (
 			<Link to="/weddings">Weddings</Link>
 			<Link to="/funerals">Funerals</Link>
 			<Link to="/other-services">Other Services</Link>
+			<Link to="/gallery">Gallery</Link>
 			<Link to="/faq">FAQ</Link>
 			<Link to="/contact">Contact</Link>
 		</nav>

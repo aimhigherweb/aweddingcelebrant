@@ -1,4 +1,6 @@
 import React from 'react'
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 
@@ -11,11 +13,15 @@ const meta = {
   image: Funeral
 };
 
-const Funerals = () => (
+const Funerals = ({data}) => (
   <Layout meta={meta}>
     <h1>Funerals</h1>
     <p>With compassion and attention to detail, I will ensure your loved ones are remembered as they deserve to be.</p>
-    <img class="right" src={Funeral} />
+    <Img
+		  fixed={data.file.childImageSharp.fixed}
+		  Tag='figure'
+		  className='right'
+      />
     <p>A Funeral Service is one that helps the departed’s loved ones celebrate their life. So many would say that a happy service is certainly memorable. I find it very gratifying to provide my families with a funeral service that helps them with the grieving process.</p>
     <p>Once again I take pride in my work providing a loving, caring service that many tell me after it is over, that is was a ‘Beautiful Service’. One elderly gentleman once told me that he hated going to funerals and being the age that he was (about 80) he went to many, but he enjoyed the service I had just given. He said this with a lovely smile.</p>
     <p>The idea behind a Registered Celebrant doing a Funeral Service is so that it won’t be a religious service (or sermon) but some families still like to have the Lord’s Prayer, the 23rd Psalm or perhaps a short prayer or reading from the Bible included in the service and I have no difficulty in saying either one. Just the same, if a family doesn’t want any religious aspect to the service, I don’t have any adversity to that either.</p>
@@ -23,5 +29,18 @@ const Funerals = () => (
     <blockquote>Give your loved one the dignity they deserve with a caring and loving Funeral Service.</blockquote>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+      file(relativePath: {eq: "funeral.jpg"}) {
+          childImageSharp {
+            fixed(height: 350, quality: 80) {
+              ...GatsbyImageSharpFixed_withWebp
+            }
+          }
+      }
+  }
+`
+
 
 export default Funerals;

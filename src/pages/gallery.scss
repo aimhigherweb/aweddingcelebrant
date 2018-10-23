@@ -1,0 +1,54 @@
+.gallery {
+    max-width: 1200px;
+}
+
+.gallery-images {
+    $width: 90vw;
+
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    margin: -10px;
+
+    figure {
+        float: none;
+        height: $width;
+            max-height: unset;
+        margin: 10px;
+        width: $width;
+            max-width: unset;
+    }
+}
+
+@media (min-width: 500px) {
+    .gallery-images {
+        $width: calc((100vw - 10vw - 40px) / 2);
+
+        figure {
+            height: $width;
+            width: $width;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .gallery-images {
+        $width: calc((100vw - 10vw - 60px) / 3);
+
+        figure {
+            height: $width;
+            width: $width;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .gallery-images {
+        $width: 280px;
+
+        figure {
+            height: $width;
+            width: $width;
+        }
+    }
+}
