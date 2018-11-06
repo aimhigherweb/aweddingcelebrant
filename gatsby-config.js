@@ -38,6 +38,13 @@ module.exports = {
           include: './src/images/'
       }
     },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: "GTM-PJ6SR7V",
+        includeInDevelopment: true,
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     {
