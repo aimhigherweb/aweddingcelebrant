@@ -29,7 +29,7 @@ const IndexPage = ({data}) => {
           critical
         />
         <div className="text">
-          <h1>Janne Martin - Registered Celebrant</h1>
+          <h1>Janne Martin - Registered Marriage Celebrant</h1>
           <blockquote>Your Ceremony, Your Way</blockquote>
         </div>
       </div>
