@@ -14,22 +14,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-sharp',
-      'gatsby-transformer-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `./src/images`,
         name: 'images',
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-copy-linked-files",
-          },
-        ],
       },
     },
     {
@@ -46,7 +36,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
