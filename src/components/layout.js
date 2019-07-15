@@ -83,6 +83,8 @@ const Meta = ({name, description, slug, image, siteName, url}) => {
           <meta name="twitter:title" content={title} />
           <meta name="twitter:description" content={description} />
           <meta name="twitter:image" content={image} />
+
+          <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
       </Helmet>
   );
 };

@@ -1,106 +1,124 @@
 @import '../variables.scss';
 
 form {
-    font-size: 1em;
-    padding-bottom: 20px;
-    width: 100%;
-        max-width: 600px;
+	font-size: 1em;
+	padding-bottom: 20px;
+	width: 100%;
+	max-width: 600px;
 
-    label {
-        color: $primary_light_90;
-        display: flex;
-            flex-wrap: wrap;
-        font-weight: bold;
-        margin: 10px 0;
-    }
+	label {
+		color: $primary_light_90;
+		display: flex;
+		flex-wrap: wrap;
+		font-weight: bold;
+		margin: 10px 0;
+	}
 
-    input, textarea {
-        border: 1px solid $primary;
-        background: $primary_light_10;
-        margin-top: 10px;
-        padding: 5px 10px;
-        width: 100%;
-            max-width: 400px;
-    }
+	input,
+	textarea {
+		border: 1px solid $primary;
+		background: $primary_light_10;
+		margin-top: 10px;
+		padding: 5px 10px;
+		width: 100%;
+		max-width: 400px;
+	}
 
-    textarea {
-        display: block;
-    }
+	textarea {
+		display: block;
+	}
 
-    button {
-        font-size: 1em;
-        padding: 10px 25px;
-    }
+	button {
+		font-size: 1em;
+		padding: 10px 25px;
+	}
 }
 
 .split {
-    display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    
-    > div {
-        width: 100%;
-    }
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	> div {
+		width: 100%;
+	}
 }
 
-iframe {
-    border: 1px solid transparent;
-    height: 90vw;
-        max-height: 400px;
-    width: 100%;
+.mapboxgl-map {
+	border: 1px solid transparent;
+	height: 90vw;
+	max-height: 400px;
+	width: 100%;
+}
+
+.mapboxgl-marker {
+	svg {
+		path,
+		circle {
+			color: $primary;
+		}
+
+		path {
+			fill: $primary;
+		}
+
+		circle {
+			fill: $secondary;
+		}
+	}
 }
 
 @media (min-width: 500px) {
-    form {
-        input {
-            margin-left: auto;
-            margin-top: 0;
-            width: 55%;
-        }
-    
-        textarea {
-            width: 100%;
-                max-width: 100%;
-        } 
-    }
+	form {
+		input {
+			margin-left: auto;
+			margin-top: 0;
+			width: 55%;
+		}
+
+		textarea {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
 }
 
 @media (min-width: 640px) {
-    form {
-        width: 55%;
+	form {
+		width: 55%;
 
-        input {
-            margin-top: 10px;
-            width: 100%;
-        }
-    }
+		input {
+			margin-top: 10px;
+			width: 100%;
+		}
+	}
 
-    .split {    
-        > div {
-            width: 40%;
-        }
-    }
+	.split {
+		> div {
+			width: 40%;
+		}
+	}
 }
 
 @media (min-width: 870px) {
-    form {
-        input {
-            margin-left: auto;
-            margin-top: 0;
-            width: 55%;
-        }
-    
-        textarea {
-            width: 100%;
-                max-width: 100%;
-        } 
-    }
+	form {
+		input {
+			margin-left: auto;
+			margin-top: 0;
+			width: 55%;
+		}
+
+		textarea {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
 }
 
 @media (min-width: 1000px) {
-    form {
-        input {
-            width: 60%;
-        }
-    }
+	form {
+		input {
+			width: 60%;
+		}
+	}
 }
