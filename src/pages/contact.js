@@ -13,6 +13,14 @@ const meta = {
 	slug: '/contact',
 }
 
+let Map
+
+if (typeof window !== `undefined`) {
+    Map = ReactMapboxGl({
+        accessToken: process.env.GATSBY_MAPBOX_API
+    })
+}
+
 // eslint-disable-next-line one-var
 const Contact = () => {
 		let ProdMap
@@ -73,12 +81,11 @@ const Contact = () => {
 						</p>
 						<ProdMap />
 					</div>
-				</div>
-			</Layout>
-		)
-	},
-	Map = ReactMapboxGl({
+				</div>Map = ReactMapboxGl({
 		accessToken: process.env.GATSBY_MAPBOX_API,
 	})
+			</Layout>
+		)
+	}
 
 export default Contact
