@@ -13,14 +13,19 @@ const meta = {
 	slug: '/contact',
 }
 
+let Map
+
+if (typeof window !== `undefined`) {
+	Map = ReactMapboxGl({
+		accessToken: process.env.GATSBY_MAPBOX_API
+	})
+}
+
+
 // eslint-disable-next-line one-var
 const Contact = () => {
-	let ProdMap,
-		 Map
+	let ProdMap
 	if (typeof window !== `undefined`) {
-		Map = ReactMapboxGl({
-			accessToken: process.env.GATSBY_MAPBOX_API
-		})
 
 		ProdMap = () => (
 			<Map style="mapbox://styles/mapbox/streets-v11" center={[115.748482, -31.799778]} zoom={[10]}>
@@ -76,7 +81,7 @@ const Contact = () => {
 								0418 955 198
 						</a>
 					</p>
-					<ProdMap />
+					{ProdMap && <ProdMap />}
 				</div>
 			</div>
 		</Layout>
